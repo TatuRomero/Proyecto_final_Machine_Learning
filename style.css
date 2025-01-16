@@ -14,14 +14,50 @@ body {
   padding: 20px;
   background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 500px;
+  max-width: 100%;
   width: 90%;
 }
+.game-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.canvas-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sketch-container {
+  position: relative;
+}
+
+.instructions-container {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+  font-size: 18px;
+}
+
+.instructions-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
 h1 {
-  color: #333;
+  color: #7e1717;
 }
 p {
-  color: #555;
+  color: #1b2fcc;
   line-height: 1.6;
 }

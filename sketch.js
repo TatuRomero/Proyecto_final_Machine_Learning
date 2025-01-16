@@ -8,7 +8,8 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(640, 480);
+  let canvas = createCanvas(640, 480);
+  canvas.parent("sketch-container");
   video = createCapture(VIDEO);
   video.size(640, 480);
   video.hide();

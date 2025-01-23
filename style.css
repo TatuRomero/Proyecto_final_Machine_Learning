@@ -11,6 +11,7 @@ body {
   height: 100vh;
   overflow: auto;
 }
+
 /* Contenedor principal */
 .container {
   text-align: center;
@@ -19,6 +20,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
+
 /* Descripción */
 .description p {
   font-size: 18px;
@@ -63,7 +65,6 @@ h1 {
 }
 
 /* Estilo para los contenedores del juego */
-
 .game-container {
   display: flex;
   justify-content: space-between;
@@ -78,6 +79,7 @@ h1 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Contenedor para el lienzo */
 .canvas-container {
   flex: 1;
   display: flex;
@@ -89,6 +91,7 @@ h1 {
   position: relative;
 }
 
+/* Contenedor de instrucciones */
 .instructions-container {
   flex: 1;
   padding: 20px;
@@ -96,17 +99,21 @@ h1 {
   font-size: 18px;
 }
 
-.instructions-container h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
+/* Estilo para las imágenes del personaje */
+.image-container {
+  display: flex;
+  flex-direction: column; /* Asegura que la imagen y el botón estén uno debajo del otro */
+  align-items: center; /* Centra los elementos horizontalmente */
+  justify-content: center;
+  margin: 0 auto; /* Para centrarlo si es necesario */
 }
 
-/* Estilo para las imágenes del personaje */
 .image-container img {
   width: 100%;
-  max-width: 300px;
+  max-width: 250px;
   border-radius: 8px;
   align-content: space-between;
+  margin-bottom: 10px; /* Añade espacio debajo de la imagen */
 }
 
 /* Estilo para el botón */

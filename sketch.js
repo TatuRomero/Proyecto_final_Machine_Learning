@@ -1,15 +1,15 @@
 // Array con las URLs de las imágenes
 let images = [
-  "https://estaticos.elcolombiano.com/binrepository/842x1080/-179c0/1200d627/none/11101/NQXP/homero-simpson_42360908_20230512163831.jpg",
-  "https://static.wikia.nocookie.net/caricaturas/images/9/9d/Arenita.jpg/revision/latest?cb=20111212202153&path-prefix=es",
-  "https://media.revistagq.com/photos/5ca5f6a77a3aec0df5496c59/master/w_1600%2Cc_limit/bob_esponja_9564.png",
-  "https://static.wikia.nocookie.net/pitufos/images/0/0f/Papa-smurf.jpg/revision/latest?cb=20140313145903&path-prefix=es",
-  "https://static.wikia.nocookie.net/scoobydoo/images/9/9a/Johnny_Bravo.png/revision/latest?cb=20160201170538",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt59s0GpehlufoSpqnkgZEfWk9Z9B7NhScug&s",
-  "https://static.wikia.nocookie.net/cartoonnetwork/images/5/52/Burbuja.png/revision/latest?cb=20150310180007&path-prefix=es",
-  "https://cdn11.bigcommerce.com/s-ydriczk/images/stencil/1500x1500/products/89583/95466/Stitch-Sitting-down-Raya-And-The-Last-Dragon-official-Cardboard-Cutout-buy-now-at-starstills__23877.1632304354.jpg?c=2",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFYjQ3cA951cz6O3gK1fQ3eHuDrwz93ypsuQ&s",
-  "https://i1.sndcdn.com/artworks-000139199111-4g3nzo-t500x500.jpg",
+  "https://i.pinimg.com/564x/95/b6/57/95b657229390663eb69ea8a2850c21e7.jpg",
+  "https://es.web.img3.acsta.net/pictures/14/06/05/13/56/127570.jpg",
+  "https://i0.wp.com/eltallerdehector.com/wp-content/uploads/2022/06/d785f-sponge-bob-48.png?resize=900%2C1263&ssl=1",
+  "https://www.tshaonline.org/images/handbook/entries/PP/popeye-sailor-man-cartoon.jpg",
+  "https://i.pinimg.com/736x/f9/14/3b/f9143b97b3a57a3cc3719947a7ba3827.jpg",
+  "https://pbs.twimg.com/media/F0XR5jbWwAcZaMF.jpg:large",
+  "https://i.pinimg.com/736x/b1/c7/43/b1c743852dec51da5aaaadc5d06a2e55.jpg",
+  "https://i0.wp.com/stickersmed.com/wp-content/uploads/2023/11/bellota.jpg?fit=800%2C800&ssl=1",
+  "https://i.pinimg.com/736x/3e/4a/42/3e4a4286cfeba082d7f3ed4512d3bd4c.jpg",
+  "https://i.pinimg.com/736x/7c/4b/c1/7c4bc1551fa3c7ce97fce84027509861.jpg",
 ];
 
 let currentImageIndex = 0;

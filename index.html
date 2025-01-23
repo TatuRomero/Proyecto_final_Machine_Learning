@@ -17,12 +17,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js"></script>
     <script src="https://unpkg.com/ml5@1/dist/ml5.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="libraries/p5.min.js"></script>
-    <script src="libraries/p5.sound.min.js"></script>
   </head>
 
   <body>
     <script src="sketch.js"></script>
+    <!-- Enlazamos el archivo de p5.js -->
+
     <div class="container">
       <h1>Dibuja el personaje</h1>
 
@@ -58,8 +58,12 @@
             dejará de dibujar y podrás ver el progreso de tu creación.
           </li>
           <li>
-            Si deseas limpiar el lienzo, presiona la tecla D de tu teclado para
-            borrar todo y empezar de nuevo.
+            Comandos: <strong>"D"</strong> -> limpiar el lienzo //
+            <strong>"R"</strong> -> Trazo de color <strong>ROJO</strong> //
+            <strong>"V"</strong> -> Trazo de color <strong>VERDE</strong> //
+            <strong>"A"</strong> -> Trazo de color <strong>AZUL</strong> //
+            <strong>"Y"</strong> -> Trazo de color <strong>AMARILLO</strong> //
+            <strong>"P"</strong> -> Trazo de color <strong>ROSA</strong>.
           </li>
         </ol>
       </div>
@@ -67,13 +71,14 @@
 
     <div class="game-container">
       <div class="canvas-container" id="sketch-container"></div>
-      <!-- Contenedor de la imagen y el texto -->
       <div class="image-container">
         <h2>Dibuja el personaje que ves aquí</h2>
         <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr5x17rV6LBX1E8dv6C-cUVBRcPEIYwqSsWQ&s"
-          alt="Personaje"
+          id="character-image"
+          src="https://estaticos.elcolombiano.com/binrepository/842x1080/-179c0/1200d627/none/11101/NQXP/homero-simpson_42360908_20230512163831.jpg"
+          alt="Homero"
         />
+        <button id="next-button">Siguiente</button>
       </div>
     </div>
   </body>

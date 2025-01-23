@@ -108,3 +108,22 @@ h1 {
   border-radius: 8px;
   align-content: space-between;
 }
+
+/* Estilo para el botón */
+#next-button {
+  font-family: "Raleway";
+  font-weight: 600;
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: rgb(218, 73, 141);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#next-button:hover {
+  background-color: rgb(105, 36, 124);
+}

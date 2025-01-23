@@ -22,10 +22,13 @@ function gotHands(results) {
 
 // Configuración inicial
 function setup() {
-  createCanvas(640, 480); // Crea el lienzo principal
+  const canvas = createCanvas(640, 480); // Crea el lienzo principal
+  canvas.parent("sketch-container"); // Enlaza el canvas al contenedor con ID 'sketch-container'
+
   painting = createGraphics(640, 480); // Crea un lienzo secundario para dibujar
 
   video = createCapture(VIDEO, { flipped: true }); // Activa la cámara con imagen reflejada
+  video.size(640, 480); // Ajusta el tamaño del video al canvas
   video.hide(); // Oculta el elemento de video en la página
 
   handPose.detectStart(video, gotHands); // Inicia la detección de manos con el video como fuente

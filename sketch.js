@@ -4,7 +4,7 @@ let images = [
   "https://es.web.img3.acsta.net/pictures/14/06/05/13/56/127570.jpg",
   "https://i0.wp.com/eltallerdehector.com/wp-content/uploads/2022/06/d785f-sponge-bob-48.png?resize=900%2C1263&ssl=1",
   "https://www.tshaonline.org/images/handbook/entries/PP/popeye-sailor-man-cartoon.jpg",
-  "https://i.pinimg.com/736x/f9/14/3b/f9143b97b3a57a3cc3719947a7ba3827.jpg",
+  "https://image.winudf.com/v2/image/Y29tLmJhbGVmb290Lk1vbmtleURMdWZmeVdhbGxwYXBlcl9zY3JlZW5fMF8xNTI0NTE5MTEwXzAyOA/screen-0.jpg?fakeurl=1&type=.jpg",
   "https://pbs.twimg.com/media/F0XR5jbWwAcZaMF.jpg:large",
   "https://i.pinimg.com/736x/b1/c7/43/b1c743852dec51da5aaaadc5d06a2e55.jpg",
   "https://i0.wp.com/stickersmed.com/wp-content/uploads/2023/11/bellota.jpg?fit=800%2C800&ssl=1",
@@ -89,9 +89,9 @@ function draw() {
     let d = dist(index.x, index.y, thumb.x, thumb.y);
 
     // Si los dedos están lo suficientemente cerca, dibuja en el lienzo secundario
-    if (d < 20) {
+    if (d < 25) {
       painting.stroke(strokeColor); // Usamos el color del trazo actual
-      painting.strokeWeight(10); // Grosor del trazo
+      painting.strokeWeight(15); // Grosor del trazo
       painting.line(px, py, x, y); // Dibuja una línea desde la posición previa hasta la actual
     }
 

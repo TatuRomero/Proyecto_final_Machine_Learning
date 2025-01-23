@@ -3,43 +3,82 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Sketch</title>
 
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Librerías -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js"></script>
     <script src="https://unpkg.com/ml5@1/dist/ml5.min.js"></script>
-
     <link rel="stylesheet" type="text/css" href="style.css" />
-
     <script src="libraries/p5.min.js"></script>
     <script src="libraries/p5.sound.min.js"></script>
   </head>
 
   <body>
     <script src="sketch.js"></script>
+
     <div class="container">
-      <h1>Juguemos a las charadas</h1>
-      <p>
-        Este es un juego en el que podrás dibujar con tu dedo frente a la cámara
-        y nuestro sistema intentará adivinar qué es lo que estás dibujando En
-        este ¡Tendrás un tiempo límite para completar cada ronda!
-      </p>
-      <p>
-        Este proyecto ha sido creado con la detección de manos de la librería de
-        ml5.js. Es un juego muy divertido en el que podrás interactuar con la
-        tecnología y conocer un poco más acerca de las maravillas que puedes
-        lograr con la I.A.
-      </p>
-      <p>¿Listo para empezar?</p>
+      <h1>Dibuja el personaje</h1>
+
+      <div class="description">
+        <p>
+          ¡Bienvenido a "Dibuja el Personaje", un juego creativo e interactivo
+          donde tú eres el artista! El desafío consiste en adaptar un personaje
+          a tu propia apariencia a través de un dibujo en tiempo real.
+          Utilizando la tecnología de reconocimiento de manos con la librería
+          ml5.js, este juego te permite crear tu obra de arte moviendo los dedos
+          en el aire.
+        </p>
+      </div>
+
+      <div class="instructions-container">
+        <h2>¿Cómo jugar?</h2>
+        <ol>
+          <li>
+            Coloca tu mano frente a la cámara con la palma abierta para que el
+            sistema pueda detectarla.
+          </li>
+          <li>
+            Para empezar a dibujar, une los dedos índice y pulgar. ¡Eso activará
+            el lápiz para que empieces a dibujar!
+          </li>
+          <li>
+            Mueve los dedos a medida que te desplaces por el lienzo y vayas
+            creando tu personaje. La posición de los dedos controla el trazo,
+            por lo que puedes dibujar libremente.
+          </li>
+          <li>
+            Cuando quieras detenerte, simplemente abre tu mano. Así el sistema
+            dejará de dibujar y podrás ver el progreso de tu creación.
+          </li>
+          <li>
+            Si deseas limpiar el lienzo, presiona la tecla D de tu teclado para
+            borrar todo y empezar de nuevo.
+          </li>
+        </ol>
+      </div>
     </div>
 
     <div class="game-container">
-      <div class="canvas-container" id="sketch-container"></div>
-      <!-- Contenedor instrucciones -->
-      <div class="instructions-container">
-        <h2>¡Reto!</h2>
-        <p>Dibuja una manzana</p>
-        <p>Recuerda, tienes tiempo limitado. Buena suerte</p>
+      <div class="canvas-container" id="sketch-container">
+        <!-- Video de la cámara -->
+        <video id="video" autoplay></video>
+        <!--<canvas id="canvas"></canvas>-->
+        <!-- Contenedor de la imagen y el texto -->
+        <div class="image-container">
+          <h2>Dibuja el personaje que ves aquí</h2>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr5x17rV6LBX1E8dv6C-cUVBRcPEIYwqSsWQ&s"
+            alt="Personaje"
+          />
+        </div>
       </div>
     </div>
   </body>
